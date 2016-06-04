@@ -239,7 +239,7 @@ def prepare_matrix_for_env_vars(matrix):
     and special cases such as Python and Numpy are handled.
 
     """
-    special_conda_vars = {'python': 'CONDA_PY', 'numpy': 'CONDA_NPY'}
+    special_conda_vars = {'python': 'CONDA_PY', 'numpy': 'CONDA_NPY', 'vc': 'VC_VERSION'}
     env_matrix = []
     for case in matrix:
         new_case = []
